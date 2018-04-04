@@ -19,6 +19,44 @@
             <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
                 <h1> Welcome {{ Auth::user()->name }} </h1>
 
+                <div class="row">
+                    <center>
+                    <form>
+                            {{csrf_field()}}
+                            <h2> POSTS </h2>
+                            @foreach($posts as $post)
+
+                            <div class="row">
+                                <div class="form-group col-md-8">
+                                    <label>{{$post['post_title']}}</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-8">
+                                    <label>{{$post['post_content']}}</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-8">
+                                    <label>{{$post['date']}}</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <a href="#" class="btn btn-outline-primary btn-md"> Like </a>
+
+                                    <a href="#" class="btn btn-success btn-md" > View Comments </a>
+
+                                    <a href="{{action('CommentController@show', $post['id'])}}" class="btn btn-primary btn-md" > Add Comment </a>
+                                </div>
+                            </div>
+                            @endforeach
+
+                        </form>
+                    </center>
+
+                </div>
+
             </main>
         </div>
     </div>
