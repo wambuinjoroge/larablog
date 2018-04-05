@@ -11,7 +11,7 @@
             <div class="col-sm-8 blog-main">
 
                 <div class="blog-post">
-                    <h2 class="blog-post-title">Posts One</h2>
+                    <h5 class="blog-post-title">Post One</h5>
                     <p class="blog-post-meta"><small><i>December 23, 2013 by <a href="#">Jeremy</a></i></small></p>
 
                     <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
@@ -23,7 +23,7 @@
                 </div><!-- /.blog-post -->
 
                 <div class="blog-post">
-                    <h2 class="blog-post-title">Post Two</h2>
+                    <h5 class="blog-post-title">Post Two</h5>
                     <p class="blog-post-meta"><small><i>December 14, 2013 by <a href="#">Evans</a></i></small></p>
 
                     <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
