@@ -29,4 +29,8 @@ class PostController extends Controller
         return redirect('home')->with('success', 'Your post has been added');
     }
 
+    public function getForm(){
+        return view('post/post_form');
+    }
+
 }

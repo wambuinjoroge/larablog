@@ -4,6 +4,7 @@
 @endsection
 
 @section('content')
+    @include('partials.header')
     <main role="main" class="container"  style="margin-top: 5px">
 
         <div class="row">

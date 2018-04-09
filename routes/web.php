@@ -23,3 +23,8 @@ Route::get('/post/post', 'PostController@post');
 Route::post('/post/comment', 'CommentController@comment_store');
 Route::get('/post/comment', 'CommentController@comment');
 Route::get('/post/{id}', 'CommentController@show');
+Route::get('/author/post', 'PostController@getForm')->name('post.form');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

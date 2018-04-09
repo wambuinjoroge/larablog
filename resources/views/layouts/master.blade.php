@@ -8,7 +8,6 @@
     @yield('styles')
 </head>
 <body>
-@include('partials.header')
 @yield('content')
 
 <script type="text/javascript" src="{{ URL::to('js/jquery.min.js') }}"></script>
